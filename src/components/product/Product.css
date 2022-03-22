@@ -1,0 +1,31 @@
+.product{
+    width:300px;
+    height:510px;
+    border:1px solid #95A0A7;
+    border-radius: 8px;
+}
+.product img{
+    height:286px;
+    width:286px;
+    border-radius: 8px;
+    padding:7px;
+}
+
+.product-info{
+    padding:14px;
+}
+.product-info h3{
+    font-size:21px;
+    margin-top:0;
+    font-weight:500;
+    text-transform:capitalize;
+    margin-bottom:0;
+}
+.product-info h4{
+    font-size:17px;
+    margin-top:10px;
+}
+.product-info p {
+    margin-top: 5px;
+    margin-bottom: 0;
+}
