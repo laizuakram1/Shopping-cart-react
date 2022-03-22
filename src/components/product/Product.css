@@ -3,12 +3,14 @@
     height:510px;
     border:1px solid #95A0A7;
     border-radius: 8px;
+    position:relative;
 }
 .product img{
     height:286px;
     width:286px;
     border-radius: 8px;
     padding:7px;
+   
 }
 
 .product-info{
@@ -26,6 +28,23 @@
     margin-top:10px;
 }
 .product-info p {
+    
+    font-size:14px;
     margin-top: 5px;
     margin-bottom: 0;
+}
+.cart-btn{
+    width:100%;
+    height:46px;
+    background-color: #FFE0B3;
+    border:1px solid #95A0A7;
+    border:none;
+    border-radius:0px 0px 8px 8px; 
+    position:absolute;
+    bottom:0;
+    transition:0.3s;
+
+}
+.cart-btn:hover{
+    background-color: orange;
 }
