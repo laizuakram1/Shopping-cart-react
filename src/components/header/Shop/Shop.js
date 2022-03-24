@@ -2,13 +2,11 @@ import React, { useEffect, useState } from 'react';
 import Product from '../../product/Product';
 import './Shop.css'
 
-const handleAddToCart = (product) => {
-    console.log(product);
-}
-export {handleAddToCart}
+
 
 const Shop = () => {
     const [products, setProducts] = useState([])
+    const [cart, setCart] = useState([])
 
     useEffect( () =>{
         fetch(`https://raw.githubusercontent.com/ProgrammingHero1/ema-john-resources/main/fakeData/products.json`)
@@ -16,6 +14,13 @@ const Shop = () => {
         .then(data => setProducts(data))
 
     }, [])
+
+    const handleAddToCart = (product) =>{
+        const newCart = [...cart, product];
+        setCart(newCart);
+    }
+
+   
     return (
         <div className='shop'>
             <div className="product-container">
@@ -29,7 +34,8 @@ const Shop = () => {
                 
             </div>
             <div className="cart-container">
-                <h5>this is cart container</h5>
+                <h5>Cart Summary</h5>
+                <p>selected items: {cart.length}</p>
             </div>
         </div>
     );
