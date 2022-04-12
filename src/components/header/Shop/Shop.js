@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Cart from '../../Cart/Cart';
 import Product from '../../product/Product';
-import './Shop.css'
+import './Shop.css';
 
 
 
